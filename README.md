@@ -2,7 +2,7 @@
 
 ### Hosted Project
 
-[slider app on netlify]()
+[slider app on netlify](https://slider-react-mini-app-by-bh27.netlify.app/)
 
 #### Setup
 
