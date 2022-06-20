@@ -20,7 +20,10 @@ function App() {
           if (personIndex === index) {
             position = "activeSlide";
           }
-          if (personIndex === index - 1 || (index ===0 && personIndex === people.length-1)) {
+          if (
+            personIndex === index - 1 ||
+            (index === 0 && personIndex === people.length - 1)
+          ) {
             position = "lastSlide";
           }
           return (
@@ -33,10 +36,10 @@ function App() {
             </article>
           );
         })}
-        <button className='prev'>
+        <button className='prev' onClick={() => setIndex(index - 1)}>
           <FaChevronLeft />
         </button>
-        <button className='next'>
+        <button className='next' onClick={() => setIndex(index + 1)}>
           <FaChevronRight />
         </button>
       </div>
